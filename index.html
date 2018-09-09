@@ -35,6 +35,8 @@ limitations under the License.
   <script src="third_party/requestanimframe.js"></script>
   <script src="js/fireworks.js"></script>
 <script>
+    let deferredPrompt;
+    
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
@@ -60,6 +62,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
       }
       deferredPrompt = null;
     });
+});
+    
+    window.addEventListener('appinstalled', (evt) => {
+  app.logEvent('a2hs', 'installed');
 });
 </script>
 <script>
