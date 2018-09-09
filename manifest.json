@@ -1,0 +1,13 @@
+{
+  "short_name": "AnaEkran",
+  "name": "Ana Ekrana Ekle!",
+  "icons": [
+    {
+      "src":"/images/icon.png",
+      "sizes": "187x187",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone"
+}
